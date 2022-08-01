@@ -35,12 +35,18 @@ body {
 /* DISPLAY CONTAINER */
 .display {
     display: flex;
+    flex-direction: column;
     background-color: rgba(235, 235, 235, 0.692);
     border-style: solid;
     width: auto;
     height: 150px;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-end;
+    padding: 10px 12px 5px;
+}
+
+#upper {
+    font-size: 22px;
 }
 
 /* CLEAR DELETE BUTTONS */
@@ -91,3 +97,15 @@ button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+/* DECIMAL BUTTON */
+#decimal:hover {
+    background-color: rgba(235, 235, 235, 0.397);
+}
+
+#decimal:active {
+    background-color: rgba(235, 235, 235, 0.397);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
