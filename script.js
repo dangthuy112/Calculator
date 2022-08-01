@@ -176,6 +176,15 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
+    if (b == 0) {
+        upperDisplay.textContent = '';
+        lowerDisplay.textContent = 'Wtf are u doing?';
+        currentNum = 0;
+        operatorPressed = false;
+        previousOperator = undefined;
+        hasDecimal = false;
+        decimalButton.disabled = false;
+    }
     return a / b;
 }
 
